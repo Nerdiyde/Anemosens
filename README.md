@@ -1,5 +1,30 @@
+
 # Anemosens
+
+## MCU PCB
+
 ![](https://github.com/Nerdiyde/Anemosens/blob/main/pictures/1.png)
+
+Thanks to the MCU Board it will be possible to use Anemosens as a standalone Anemometer that can be used for long time observations in remote areas (therefore the microSD-card slot) or just as one part of your weatherstation (therefore the RS485 interface).  
+
+The RS485 interface is used to make the measured data available via Modbus. This way you can connect the Anemometer easily to your RaspberryPi, PC or many other platforms that support RS485/Modbus. 
+
+Additionally you can activate a serial-stream of the data (packed as handy JSON) via the USB connection.
+
+Last but not least the integrated ESP32 also opens a BLE Server. Thanks to this you also have the possibility to pull the data wirelessly using your smartphone or computer.
+
+Of course you can also write your own firmware and program it via the integrated USB-C port. The QWIIC-port makes it easy to connect additional sensors via I2C. 
+
+**You can find more information about the software and detailed HowTo's in the following articles:**
+- not ready yet
+
+![](https://github.com/Nerdiyde/Anemosens/blob/main/pictures/2.png)
+![](https://github.com/Nerdiyde/Anemosens/blob/main/pictures/RS485.png)
+
+## Sensor PCB
+
+![](https://github.com/Nerdiyde/Anemosens/blob/main/pictures/AS5048B.png)
+
 The Anemosens sensor PCB is the basis for the sensor assembly of Anemosens, a 3D printed anemometer that I developed for the second version of WinDIY. (article here:  **_[https://nerdiy.de/en/howto-pcb-das-anemosens-sensor-pcb-aufbauen//](https://nerdiy.de/en/howto-pcb-das-anemosens-sensor-pcb-aufbauen/)_**).
 
 For this purpose, an AH49E Hall sensor and an AS5048B I2C 14 bit magnetic rotary encoder are installed on the PCB. The AS5048B is used to determine the wind direction. With the help of the AH49E Hall sensor you can measure the wind speed by measuring the time of one complete revolution of the wind blades.
@@ -10,8 +35,6 @@ To finish the assembly of the PCB you need to divide it into two parts and solde
 
 - [PCB – Assemble the Anemosens sensor PCB](https://nerdiy.de/en/howto-pcb-das-anemosens-sensor-pcb-aufbauen/)
 
-![](https://github.com/Nerdiyde/Anemosens/blob/main/pictures/2.png)
-![](https://github.com/Nerdiyde/Anemosens/blob/main/pictures/RS485.png)
 
 ### Trademarks
 All third-party trademarks are the property of their respective owners. More infos here: https://nerdiy.de/en/warenzeichen/
