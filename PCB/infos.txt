@@ -1,0 +1,7 @@
+Additonal build instructions:
+English: https://nerdiy.de/en/pxldigit/
+German: https://nerdiy.de/pxldigit/
+
+The PCBs can be ordered at:
+https://www.pcbway.com/project/shareproject/Anemosens_MCU.html
+https://www.pcbway.com/project/shareproject/Anemosens_sensor_PCB.html
