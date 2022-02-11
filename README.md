@@ -1,5 +1,14 @@
 
+
 # Anemosens
+## Detailed build guide
+Anemosens is an 3D printable anemometer that mostly consists of SLA printed parts.
+**You can find more information and detailed HowTo's in the following articles:**
+- [Anemosens – Build a 3D printed wind sensor / anemometer](https://nerdiy.de/en/howto-anemosens-ein-3d-gedruckten-windsensor-anemometer-aufbauen/)
+
+[![Anemosens_Video](https://img.youtube.com/vi/w3RU5c9Zf3Q/0.jpg)](https://www.youtube.com/watch?v=w3RU5c9Zf3Q)
+
+
 
 ## MCU PCB
 
@@ -15,8 +24,9 @@ Last but not least the integrated ESP32 also opens a BLE Server. Thanks to this 
 
 Of course you can also write your own firmware and program it via the integrated USB-C port. The QWIIC-port makes it easy to connect additional sensors via I2C. 
 
-**You can find more information about the software and detailed HowTo's in the following articles:**
-- not ready yet
+**You can find more information about the sensor pcb in the following article:**
+
+- [PCB – Assembly of the Anemosens_MCU PCB](https://nerdiy.de/en/howto-pcb-anemosens_mcu-pcb-aufbauen/)
 
 ![](https://github.com/Nerdiyde/Anemosens/blob/main/pictures/2.png)
 ![](https://github.com/Nerdiyde/Anemosens/blob/main/pictures/RS485.png)
@@ -31,7 +41,7 @@ For this purpose, an AH49E Hall sensor and an AS5048B I2C 14 bit magnetic rotary
 
 To finish the assembly of the PCB you need to divide it into two parts and solder it together at a 90° angle. The finished PCB can then mounted into the 3D printed housing from Anemosens and fixed with three M2x6 screws.
 
-**You can find more information about the software and detailed HowTo's in the following articles:**
+**You can find more information about the sensor pcb in the following article:**
 
 - [PCB – Assemble the Anemosens sensor PCB](https://nerdiy.de/en/howto-pcb-das-anemosens-sensor-pcb-aufbauen/)
 
