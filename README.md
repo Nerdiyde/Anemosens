@@ -1,8 +1,12 @@
 
 
 # Anemosens
-## Detailed build guide
 Anemosens is an 3D printable anemometer that mostly consists of SLA printed parts.
+
+![](https://github.com/Nerdiyde/Anemosens/blob/main/pictures/Anemosens_overview.png)
+
+## Detailed build guide
+
 **You can find more information and detailed HowTo's in the following articles:**
 - [Anemosens – Build a 3D printed wind sensor / anemometer](https://nerdiy.de/en/howto-anemosens-ein-3d-gedruckten-windsensor-anemometer-aufbauen/)
 
