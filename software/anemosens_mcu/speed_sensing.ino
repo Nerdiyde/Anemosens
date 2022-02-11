@@ -1,4 +1,27 @@
+/*                                 _   _                 _  _               _
+                                 | \ | |               | |(_)             | |
+  __      ____      ____      __ |  \| |  ___  _ __  __| | _  _   _     __| |  ___
+  \ \ /\ / /\ \ /\ / /\ \ /\ / / | . ` | / _ \| '__|/ _` || || | | |   / _` | / _ \
+   \ V  V /  \ V  V /  \ V  V /_ | |\  ||  __/| |  | (_| || || |_| | _| (_| ||  __/
+    \_/\_/    \_/\_/    \_/\_/(_)|_| \_| \___||_|   \__,_||_| \__, |(_)\__,_| \___|
+                                                               __/ |
+                                                              |___/
+     Anemosens_MCU firmware by Fabian Steppat
+     Infos on www.nerdiy.de/anemosens
 
+     This program is free software: you can redistribute it and/or modify
+     it under the terms of the GNU General Public License as published by
+     the Free Software Foundation, either version 3 of the License, or
+     (at your option) any later version.
+
+     This program is distributed in the hope that it will be useful,
+     but WITHOUT ANY WARRANTY; without even the implied warranty of
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+     GNU General Public License for more details.
+
+     You should have received a copy of the GNU General Public License
+     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 
 void init_wind_speed_sensor()
 {
@@ -8,7 +31,6 @@ void init_wind_speed_sensor()
   }
 }
 
-
 int16_t read_hall_sens_value()
 {
   int32_t sensorValue = 0;
@@ -16,13 +38,10 @@ int16_t read_hall_sens_value()
     sensorValue += analogRead(HALL_SENS_PIN);
   }
   return abs(sensorValue / HALL_SENSOR_SAMPLES_COUNT);
-
 }
-
 
 void update_wind_speed_moving_average()
 {
-
   uint16_t hall_value = read_hall_sens_value();
 
   uint16_t middle = wind_speed_min_hall_sensor_value + ((wind_speed_max_hall_sensor_value - wind_speed_min_hall_sensor_value) / 2);
@@ -38,10 +57,6 @@ void update_wind_speed_moving_average()
     wind_speed_max_hall_sensor_value = hall_value;
   }
 
-
-  //Serial.print("Hall_sensor: ");
-  //Serial.println(hall_value);
-
   // this is the difference of the current and previous deviation. If this is positive we are about to detect a rising edge of the signal
   int16_t _deviation_cycle_difference = speed_sensor_current_deviation - speed_sensor_current_deviation_previous;
 
@@ -56,10 +71,6 @@ void update_wind_speed_moving_average()
   }
 
   step_size_average = step_size_total / WIND_SPEED_STEP_SIZE_MOVING_AVERAGE_READINGS_COUNT;
-  /*
-    Serial.print(" step_size_average: ");
-    Serial.print(step_size_average);*/
-
 
   if (step_size_average > SPEED_SENSOR_EDGE_DETECTION_LIMIT)
   {
@@ -82,14 +93,12 @@ void update_wind_speed_moving_average()
     wind_speed_tick_counter++;
   }
   speed_sensor_current_deviation_previous = speed_sensor_current_deviation;
-
 }
 
 boolean wind_speed_measurement_is_ready()
 {
   return (wind_speed_min_hall_sensor_value != WIND_SPEED_MIN_HALL_SENSOR_VALUE_STANDARD) && (wind_speed_max_hall_sensor_value != WIND_SPEED_MAX_HALL_SENSOR_VALUE_STANDARD);
 }
-
 
 // converts wind speed to wind strength
 String convert_meter_per_second_to_wind_strength(float wind_speed)

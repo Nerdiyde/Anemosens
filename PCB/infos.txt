@@ -1,6 +1,12 @@
 Additonal build instructions:
-English: https://nerdiy.de/en/pxldigit/
-German: https://nerdiy.de/pxldigit/
+
+MCU PCB:
+English: https://nerdiy.de/en/howto-pcb---anemosens_mcu-pcb-aufbauen/
+German: https://nerdiy.de/howto-pcb---anemosens_mcu-pcb-aufbauen/
+
+Sensor PCB:
+English: https://nerdiy.de/en/howto-pcb-das-anemosens-sensor-pcb-aufbauen/
+German: https://nerdiy.de/howto-pcb-das-anemosens-sensor-pcb-aufbauen/
 
 The PCBs can be ordered at:
 https://www.pcbway.com/project/shareproject/Anemosens_MCU.html
