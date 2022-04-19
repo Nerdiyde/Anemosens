@@ -30,7 +30,7 @@
    RS485: Modbusfunktionalität: Daten werden über RS485 zur Verfügung gestellt.
    ausgabe der gesammelten daten über serial connection
    SPIFFS: Daten können im SPiffs gespeichert werden
-   Ringspeicherfunktion
+   Ringspeicherfunktion (auf SD-Karte speichern, falls keine SD Karte vorhanden im internen/externen Flash speichern)
 */
 
 //Wind direction sensing
