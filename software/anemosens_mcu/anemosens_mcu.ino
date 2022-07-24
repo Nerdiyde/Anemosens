@@ -31,6 +31,7 @@
    ausgabe der gesammelten daten über serial connection
    SPIFFS: Daten können im SPiffs gespeichert werden
    Ringspeicherfunktion (auf SD-Karte speichern, falls keine SD Karte vorhanden im internen/externen Flash speichern)
+   esp web tools zum flashen auf nerdiy.de zur verfügung stellen
 */
 
 //Wind direction sensing
