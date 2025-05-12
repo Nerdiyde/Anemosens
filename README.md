@@ -9,7 +9,6 @@ Anemosens is an 3D printable anemometer that mostly consists of SLA printed part
 
 ![](https://github.com/Nerdiyde/Anemosens/blob/main/pictures/Anemosens_overview.png)
 
-  
 ## Detailed build guide
 
   
@@ -32,8 +31,6 @@ Anemosens is an 3D printable anemometer that mostly consists of SLA printed part
 
 ![](https://github.com/Nerdiyde/Anemosens/blob/main/pictures/1.png)
 
-  
-
 Thanks to the MCU Board it will be possible to use Anemosens as a standalone Anemometer that can be used for long time observations in remote areas (therefore the microSD-card slot) or just as one part of your weatherstation (therefore the RS485 interface).
 
   
@@ -54,11 +51,12 @@ Of course you can also write your own firmware and program it via the integrated
 
   
 
-**You can find more information about the sensor pcb in the following article:**
+**You can find more information about the MCU pcb here:**
 
   
 
-- [PCB - Assembly of the Anemosens_MCU PCB](https://nerdiy.de/en/howto-pcb-anemosens_mcu-pcb-aufbauen/)
+- Post: [PCB - Assembly of the Anemosens_MCU PCB](https://nerdiy.de/en/howto-pcb-anemosens_mcu-pcb-aufbauen/)
+- PCB: https://nerdiy.de/en/product-2/anemosens_mcu-pcb-v1-3-platine-unbestueckt/
 
   
 
@@ -85,11 +83,12 @@ To finish the assembly of the PCB you need to divide it into two parts and solde
 
   
 
-**You can find more information about the sensor pcb in the following article:**
+**You can find more information about the sensor pcb here:**
 
   
 
-- [PCB - Assemble the Anemosens sensor PCB](https://nerdiy.de/en/howto-pcb-das-anemosens-sensor-pcb-aufbauen/)
+- Post: [PCB - Assemble the Anemosens sensor PCB](https://nerdiy.de/en/howto-pcb-das-anemosens-sensor-pcb-aufbauen/)
+- PCB: https://nerdiy.de/en/product-2/anemosens_mcu-pcb-v1-3-platine-unbestueckt/
 
   
   
