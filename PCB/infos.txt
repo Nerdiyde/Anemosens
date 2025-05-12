@@ -1,0 +1,13 @@
+Additonal build instructions:
+
+MCU PCB:
+English: https://nerdiy.de/en/howto-pcb---anemosens_mcu-pcb-aufbauen/
+German: https://nerdiy.de/howto-pcb---anemosens_mcu-pcb-aufbauen/
+
+Sensor PCB:
+English: https://nerdiy.de/en/howto-pcb-das-anemosens-sensor-pcb-aufbauen/
+German: https://nerdiy.de/howto-pcb-das-anemosens-sensor-pcb-aufbauen/
+
+The PCBs can be ordered at:
+https://nerdiy.de/en/product-2/anemosens_mcu-pcb-v1-3-platine-unbestueckt/
+https://nerdiy.de/en/product-2/anemosens-sensor-pcb-v1-3-platine-unbestueckt/
